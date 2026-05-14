@@ -1426,6 +1426,46 @@ html{
   width: 100%;
 }
 
+.after\:w-\[98\%\]::after {
+  content: var(--tw-content);
+  width: 98%;
+}
+
+.after\:w-\[\%\]::after {
+  content: var(--tw-content);
+  width: %;
+}
+
+.after\:w-\[85\%\]::after {
+  content: var(--tw-content);
+  width: 85%;
+}
+
+.after\:w-\[65\%\]::after {
+  content: var(--tw-content);
+  width: 65%;
+}
+
+.after\:w-\[5\%\]::after {
+  content: var(--tw-content);
+  width: 5%;
+}
+
+.after\:w-\[60\%\]::after {
+  content: var(--tw-content);
+  width: 60%;
+}
+
+.after\:w-\[45\%\]::after {
+  content: var(--tw-content);
+  width: 45%;
+}
+
+.after\:w-\[50\%\]::after {
+  content: var(--tw-content);
+  width: 50%;
+}
+
 .after\:rounded-\[0\%_0\%_50\%_50\%\]::after {
   content: var(--tw-content);
   border-radius: 0% 0% 50% 50%;
@@ -1584,11 +1624,6 @@ html{
 .group:hover .group-hover\:text-green-400 {
   --tw-text-opacity: 1;
   color: rgb(74 222 128 / var(--tw-text-opacity, 1));
-}
-
-.dark\:bg-white:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 640px) {
@@ -1837,5 +1872,12 @@ html{
   .lg\:object-center {
     -o-object-position: center;
        object-position: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   }
 }
